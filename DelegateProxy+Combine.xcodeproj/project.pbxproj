@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E567603628A6BBF800A473CB /* DelegateProxy_Combine.h in Headers */ = {isa = PBXBuildFile; fileRef = E567602828A6BBF800A473CB /* DelegateProxy_Combine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E56E822828AA700200392274 /* RxObjCRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = E56E822728AA700200392274 /* RxObjCRuntime */; };
+		E5E2788928A93A3300AAA971 /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2788828A93A3300AAA971 /* DelegateProxyType.swift */; };
+		E5E2788D28A93AC900AAA971 /* DelegateProxy+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2788C28A93AC900AAA971 /* DelegateProxy+Combine.swift */; };
+		E5E2789028A93BB800AAA971 /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2788F28A93BB800AAA971 /* MainScheduler.swift */; };
+		E5E2789528A93C6A00AAA971 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2789428A93C6A00AAA971 /* DispatchQueue+Extensions.swift */; };
+		E5E2789728A93D3700AAA971 /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2789628A93D3700AAA971 /* DelegateProxy.swift */; };
+		E5E2790E28A9589D00AAA971 /* Publishers+SubscribersCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2790D28A9589D00AAA971 /* Publishers+SubscribersCounter.swift */; };
+		E5E2791028A958E800AAA971 /* Publisher+CountingSubscribers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2790F28A958E800AAA971 /* Publisher+CountingSubscribers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E567602528A6BBF800A473CB /* DelegateProxy_Combine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DelegateProxy_Combine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E567602828A6BBF800A473CB /* DelegateProxy_Combine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateProxy_Combine.h; sourceTree = "<group>"; };
+		E5E2788828A93A3300AAA971 /* DelegateProxyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyType.swift; sourceTree = "<group>"; };
+		E5E2788C28A93AC900AAA971 /* DelegateProxy+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DelegateProxy+Combine.swift"; sourceTree = "<group>"; };
+		E5E2788F28A93BB800AAA971 /* MainScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScheduler.swift; sourceTree = "<group>"; };
+		E5E2789428A93C6A00AAA971 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		E5E2789628A93D3700AAA971 /* DelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxy.swift; sourceTree = "<group>"; };
+		E5E2790D28A9589D00AAA971 /* Publishers+SubscribersCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+SubscribersCounter.swift"; sourceTree = "<group>"; };
+		E5E2790F28A958E800AAA971 /* Publisher+CountingSubscribers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+CountingSubscribers.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E567602228A6BBF800A473CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56E822828AA700200392274 /* RxObjCRuntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E567601B28A6BBF800A473CB = {
+			isa = PBXGroup;
+			children = (
+				E567602728A6BBF800A473CB /* DelegateProxy+Combine */,
+				E567602628A6BBF800A473CB /* Products */,
+				E5E278F228A940FE00AAA971 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E567602628A6BBF800A473CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E567602528A6BBF800A473CB /* DelegateProxy_Combine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E567602728A6BBF800A473CB /* DelegateProxy+Combine */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2790C28A9588500AAA971 /* Publisher+ */,
+				E5E2790B28A9587B00AAA971 /* Publishers+ */,
+				E5E2789328A93C5D00AAA971 /* Platform */,
+				E567602828A6BBF800A473CB /* DelegateProxy_Combine.h */,
+				E5E2789128A93C0200AAA971 /* Cocoa+ */,
+				E5E2788E28A93BA300AAA971 /* Schedulers */,
+			);
+			path = "DelegateProxy+Combine";
+			sourceTree = "<group>";
+		};
+		E5E2788E28A93BA300AAA971 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2788F28A93BB800AAA971 /* MainScheduler.swift */,
+			);
+			path = Schedulers;
+			sourceTree = "<group>";
+		};
+		E5E2789128A93C0200AAA971 /* Cocoa+ */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2789228A93C2100AAA971 /* Common */,
+				E5E2788C28A93AC900AAA971 /* DelegateProxy+Combine.swift */,
+			);
+			path = "Cocoa+";
+			sourceTree = "<group>";
+		};
+		E5E2789228A93C2100AAA971 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2788828A93A3300AAA971 /* DelegateProxyType.swift */,
+				E5E2789628A93D3700AAA971 /* DelegateProxy.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E5E2789328A93C5D00AAA971 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2789428A93C6A00AAA971 /* DispatchQueue+Extensions.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		E5E278F228A940FE00AAA971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5E2790B28A9587B00AAA971 /* Publishers+ */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2790D28A9589D00AAA971 /* Publishers+SubscribersCounter.swift */,
+			);
+			path = "Publishers+";
+			sourceTree = "<group>";
+		};
+		E5E2790C28A9588500AAA971 /* Publisher+ */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2790F28A958E800AAA971 /* Publisher+CountingSubscribers.swift */,
+			);
+			path = "Publisher+";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E567602028A6BBF800A473CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E567603628A6BBF800A473CB /* DelegateProxy_Combine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E567602428A6BBF800A473CB /* DelegateProxy+Combine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E567603928A6BBF800A473CB /* Build configuration list for PBXNativeTarget "DelegateProxy+Combine" */;
+			buildPhases = (
+				E567602028A6BBF800A473CB /* Headers */,
+				E567602128A6BBF800A473CB /* Sources */,
+				E567602228A6BBF800A473CB /* Frameworks */,
+				E567602328A6BBF800A473CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DelegateProxy+Combine";
+			packageProductDependencies = (
+				E56E822728AA700200392274 /* RxObjCRuntime */,
+			);
+			productName = "DelegateProxy+Combine";
+			productReference = E567602528A6BBF800A473CB /* DelegateProxy_Combine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E567601C28A6BBF800A473CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E567602428A6BBF800A473CB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E567601F28A6BBF800A473CB /* Build configuration list for PBXProject "DelegateProxy+Combine" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E567601B28A6BBF800A473CB;
+			packageReferences = (
+				E56E822628AA700200392274 /* XCRemoteSwiftPackageReference "RXObjCRuntime" */,
+			);
+			productRefGroup = E567602628A6BBF800A473CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E567602428A6BBF800A473CB /* DelegateProxy+Combine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E567602328A6BBF800A473CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E567602128A6BBF800A473CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E2790E28A9589D00AAA971 /* Publishers+SubscribersCounter.swift in Sources */,
+				E5E2788D28A93AC900AAA971 /* DelegateProxy+Combine.swift in Sources */,
+				E5E2789028A93BB800AAA971 /* MainScheduler.swift in Sources */,
+				E5E2789528A93C6A00AAA971 /* DispatchQueue+Extensions.swift in Sources */,
+				E5E2788928A93A3300AAA971 /* DelegateProxyType.swift in Sources */,
+				E5E2791028A958E800AAA971 /* Publisher+CountingSubscribers.swift in Sources */,
+				E5E2789728A93D3700AAA971 /* DelegateProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E567603728A6BBF800A473CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos macosx appletvsimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		E567603828A6BBF800A473CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos macosx appletvsimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		E567603A28A6BBF800A473CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y7YQUS95SK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftman.DelegateProxy-Combine";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E567603B28A6BBF800A473CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y7YQUS95SK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftman.DelegateProxy-Combine";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E567601F28A6BBF800A473CB /* Build configuration list for PBXProject "DelegateProxy+Combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E567603728A6BBF800A473CB /* Debug */,
+				E567603828A6BBF800A473CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E567603928A6BBF800A473CB /* Build configuration list for PBXNativeTarget "DelegateProxy+Combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E567603A28A6BBF800A473CB /* Debug */,
+				E567603B28A6BBF800A473CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E56E822628AA700200392274 /* XCRemoteSwiftPackageReference "RXObjCRuntime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-man/RXObjCRuntime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E56E822728AA700200392274 /* RxObjCRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E56E822628AA700200392274 /* XCRemoteSwiftPackageReference "RXObjCRuntime" */;
+			productName = RxObjCRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E567601C28A6BBF800A473CB /* Project object */;
+}

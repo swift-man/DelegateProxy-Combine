@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "rxobjcruntime",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-man/RXObjCRuntime",
+      "state" : {
+        "revision" : "290e3257a846e0679800d84127d7b15eabdc4e0e",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
